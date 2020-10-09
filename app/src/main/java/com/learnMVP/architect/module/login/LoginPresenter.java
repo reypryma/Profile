@@ -16,10 +16,10 @@ public class LoginPresenter implements LoginContract.Presenter {
     }
 
     @Override
-    public void performLogin(String user, String password) {
+    public void performLogin(String user, String email) {
         // This is not the way
         // Cause it isn't SRP
-        saveUser(user, password);
+        saveUser(user, email);
         view.redirectToProfile();
     }
 
@@ -28,10 +28,10 @@ public class LoginPresenter implements LoginContract.Presenter {
 
     }
 
-    private void saveUser(String userName, String password) {
+    private void saveUser(String userName, String email) {
         SharedPreferences.Editor editor = this.sharedPreferences.edit();
         editor.putString(Constants.USER_KEY, userName);
-        editor.putString(Constants.PASSWORD_KEY, password);
+        editor.putString(Constants.PASSWORD_KEY, email);
         editor.commit();
     }
 }

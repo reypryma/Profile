@@ -27,8 +27,8 @@ public class ProfilePresenter implements ProfileContract.Presenter {
     @Override
     public void getProfile() {
         String userName = this.sharedPreferences.getString(Constants.USER_KEY, context.getResources().getString(R.string.default_value));
-        String password = this.sharedPreferences.getString(Constants.PASSWORD_KEY, context.getResources().getString(R.string.default_value));
+        String email = this.sharedPreferences.getString(Constants.PASSWORD_KEY, context.getResources().getString(R.string.default_value));
 
-        view.updateProfile(userName, password);
+        view.updateProfile(userName, email);
     }
 }

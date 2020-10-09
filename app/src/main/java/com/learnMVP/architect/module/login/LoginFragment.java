@@ -29,7 +29,7 @@ public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Pre
         presenter.start();
 
         userName = fragmentView.findViewById(R.id.txt_user);
-        etPassword = fragmentView.findViewById(R.id.et_password);
+        etPassword = fragmentView.findViewById(R.id.et_email);
         Button btnLogin = fragmentView.findViewById(R.id.btn_login);
         btnLogin.setOnClickListener(this::setBtnLoginClick);
 
@@ -40,8 +40,8 @@ public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Pre
 
     private void setBtnLoginClick(View view) {
         String user = userName.getText().toString();
-        String password = etPassword.getText().toString();
-        presenter.performLogin(user, password);
+        String email = etPassword.getText().toString();
+        presenter.performLogin(user, email);
     }
 
     @Override
