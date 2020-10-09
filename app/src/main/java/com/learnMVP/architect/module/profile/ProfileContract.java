@@ -7,7 +7,7 @@ public interface ProfileContract {
     interface View extends BaseView<Presenter> {
         void goBackToLogin();
 
-        void updateProfile(String userName, String password);
+        void updateProfile(String userName, String email);
     }
 
     interface Presenter extends BasePresenter {

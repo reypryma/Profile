@@ -17,6 +17,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:gravity="center"
         android:layout_marginBottom="4dp"
         android:text="@string/username"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
@@ -24,24 +25,28 @@
     <TextView
         android:id="@+id/tv_userName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="54dp"
+        android:gravity="center"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp" />
 
     <TextView
+        android:id="@+id/align"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="4dp"
-        android:text="@string/password_hint"
+        android:text="@string/email_address"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
     <TextView
-        android:id="@+id/tv_password"
+        android:id="@+id/tv_email"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp" />
 </LinearLayout>

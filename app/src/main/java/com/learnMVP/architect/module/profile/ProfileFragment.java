@@ -27,7 +27,7 @@ public class ProfileFragment extends BaseFragment<ProfileActivity, ProfileContra
         presenter = new ProfilePresenter(this, requireContext());
 
         tvEmail = fragmentView.findViewById(R.id.tv_userName);
-        tvPassword = fragmentView.findViewById(R.id.tv_password);
+        tvPassword = fragmentView.findViewById(R.id.tv_email);
 
         setTitle(getResources().getString(R.string.profile_title));
         presenter.start();
@@ -43,9 +43,9 @@ public class ProfileFragment extends BaseFragment<ProfileActivity, ProfileContra
     }
 
     @Override
-    public void updateProfile(String userName, String password) {
+    public void updateProfile(String userName, String email) {
         tvEmail.setText(userName);
-        tvPassword.setText(password);
+        tvPassword.setText(email);
     }
 
     @Override
