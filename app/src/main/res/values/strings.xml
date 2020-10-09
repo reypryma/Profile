@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Profile App</string>
+
+    <string name="login_title">Login</string>
+
+    <string name="username">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="profile_title">Profile</string>
+
+    <string name="default_value">u0020</string>
+</resources>
